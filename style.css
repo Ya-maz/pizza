@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Puritan&display=swap');
+
+* {
+    font-family: 'Puritan', sans-serif;
+    color: #fff;
+    margin:0;
+    padding: 0;
+}
+
+.mainPage{
+    background: radial-gradient(50% 50% at 50% 50%, #BAAFDA 0%, #2E2B35 0.12%, #252034 100%);
+    width: 100vw;
+    height: 100vh;
+    background-attachment:fixed;
+
+}
+
+.logo {
+    background: no-repeat url(./img/LOGO\ main.svg);
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 96px;
+    top: 44px;
+}
+
+.basil{
+    background: no-repeat url(./img/green.png);
+    position: absolute;
+    width: 452px;
+    height: 257px;
+    left: 368px;
+    top: 0px;
+}
+
+.icons {
+    display: flex;
+    margin-left: 1300px;
+    padding-top: 33px;
+}
+.icons .favorite {
+    background: no-repeat url(./img/favorite.svg);
+    width: 20px;
+    height: 19px;
+    padding-right: 20px;
+}
+
+.icons .basket {
+    background: no-repeat url(./img/basket.svg); 
+    width: 20px;
+    height: 33px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+
+}
+
+.currentNamePizza {
+    letter-spacing: 0.5em;
+    padding-top: 10px;
+    width: 350px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 10px;
+}
+
+.ingredients {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+
+.size {
+    display:flex;
+    flex-direction: column;
+    margin-right: 280px;
+    margin-left: 130px;
+}
+
+.choiceSize {
+    font-size: 20px;
+    padding-left: 27px;
+}
+.sizeSML {
+    display:flex;
+    margin: 20px;
+    justify-content: center;
+    letter-spacing: normal;
+}
+
+.sizeS{    
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50px;}
+.sizeM{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50px;
+}
+.sizeL{    
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50px;}
+
+.basket {
+    margin-right: 190px;
+}
+
