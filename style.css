@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.mainPage{
+.mainBlock{
     background: radial-gradient(50% 50% at 50% 50%, #BAAFDA 0%, #2E2B35 0.12%, #252034 100%);
     width: 100vw;
     height: 100vh;
@@ -48,7 +48,7 @@
 .icons .basket {
     background: no-repeat url(./img/basket.svg); 
     width: 20px;
-    height: 33px;
+    height: 21px;
 }
 
 .flexbox {
@@ -69,6 +69,7 @@
     font-weight: 400;
     line-height: 27px;
     padding: 10px;
+    letter-spacing: 14px;
 }
 
 .ingredients {
@@ -112,6 +113,144 @@
     border-radius: 50px;}
 
 .basket {
-    margin-right: 190px;
+    margin-right: 130px;
+    display: flex;
 }
 
+.basketIcon {
+    background: no-repeat url(./img/basket.svg); 
+    width: 32px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.menuBlock{}
+.menu{}
+.menuCircle{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+}
+.menuCircle_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menuCircle_content{
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    width: 0;
+    transform-origin: 0 100%;
+    padding-bottom: 630px;
+    font-size: 18px;
+}
+.large{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    border: 2px solid rgba(229, 229, 229, 0.7);
+}
+.large_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    transform-origin: 100% 0%;
+    transform: rotate(122deg);
+    padding-top:594px;
+
+}
+.large_content{
+    width: 15px;
+    height: 15px;
+    background: rgba(229, 229, 229, 1);
+    border-radius: 50%;
+
+}
+.middle{}
+.middle{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1050px;
+    height: 1050px;
+    border-radius: 50%;
+    border: 2px solid rgba(229, 229, 229, 0.7);
+}
+.middle_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    transform-origin: 100% 0%;
+    transform: rotate(122deg);
+    padding-top:594px;
+
+}
+.middle_content{
+    width: 15px;
+    height: 15px;
+    background: rgba(229, 229, 229, 1);
+    border-radius: 50%;
+
+}
+.small{
+    position: absolute;
+    width: 1000px;
+    height: 920px;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: no-repeat url(./img/pizza.png);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    background-color: rgba(229, 229, 229, 0.7);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* .menuCircle{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: 2px solid rgba(229, 229, 229, 0.7);
+}
+.large_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.large_content{
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    width: 0;
+    transform-origin: 0 100%;
+    outline: 2px dotted gold;
+    padding-bottom: 650px;
+    font-size: 18px;
+
+
+} */
