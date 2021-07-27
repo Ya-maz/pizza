@@ -7,6 +7,12 @@
     padding: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
 .mainBlock{
     background: radial-gradient(50% 50% at 50% 50%, #BAAFDA 0%, #2E2B35 0.12%, #252034 100%);
     width: 100vw;
@@ -20,15 +26,15 @@
     position: absolute;
     width: 110px;
     height: 110px;
-    left: 96px;
-    top: 44px;
+    left: 90px;
+    top: 40px;
 }
 
 .basil{
     background: no-repeat url(./img/green.png);
     position: absolute;
-    width: 452px;
-    height: 257px;
+    width: 442px;
+    height: 247px;
     left: 368px;
     top: 0px;
 }
@@ -65,29 +71,30 @@
 }
 
 .name {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 22px;
     line-height: 27px;
     padding: 10px;
     letter-spacing: 14px;
 }
 
 .ingredients {
+    width: 250px;
     font-size: 12px;
-    line-height: 15px;
     padding-left: 10px;
+    letter-spacing: 2px
 }
 
 .size {
     display:flex;
     flex-direction: column;
     margin-right: 280px;
-    margin-left: 130px;
+    margin-left: 50px;
 }
 
 .choiceSize {
-    font-size: 20px;
-    padding-left: 27px;
+    font-size: 16px;
+    padding-left: 44px;
+    color: rgba(255, 255, 255, 0.5);
 }
 .sizeSML {
     display:flex;
@@ -99,7 +106,8 @@
 .sizeS{    
     padding: 10px 15px;
     border: 1px solid #E5E5E5;
-    border-radius: 50px;}
+    border-radius: 50px;
+}
 .sizeM{
     margin-right: 30px;
     margin-left: 30px;
@@ -110,11 +118,13 @@
 .sizeL{    
     padding: 10px 15px;
     border: 1px solid #E5E5E5;
-    border-radius: 50px;}
+    border-radius: 50px;
+}
 
 .basket {
-    margin-right: 130px;
+    margin-right: 65px;
     display: flex;
+    font-size: 24px;;
 }
 
 .basketIcon {
@@ -124,11 +134,21 @@
     margin-left: 10px;
 }
 
+.controlPanel {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 180px 0 190px;
+    letter-spacing: 2px;
+}
+
+.addToBasket,
+.saveToFavorites { color: rgba(255, 255, 255, 0.5);}
+
 .menuBlock{}
 .menu{}
 .menuCircle{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1300px;
@@ -143,7 +163,7 @@
 }
 .menuCircle_content{
     position: absolute;
-    bottom: 120%;
+    bottom: 130%;
     left: 50%;
     width: 0;
     transform-origin: 0 100%;
@@ -152,7 +172,7 @@
 }
 .large{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1200px;
@@ -180,7 +200,7 @@
 .middle{}
 .middle{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1050px;
@@ -209,7 +229,7 @@
     position: absolute;
     width: 1000px;
     height: 920px;
-    top: 115%;
+    top: 122%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: no-repeat url(./img/pizza.png);
@@ -217,14 +237,19 @@
 .nav{
     display: flex;
     justify-content: space-between;
+
 }
 
 .left, .right {
-    background-color: rgba(229, 229, 229, 0.7);
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    background: no-repeat url(./img/leftButton.svg);
+    margin: 80px 50px 0 50px;
 }
+.right {
+    transform: rotate(180deg);
+}
+
 
 /* .menuCircle{
     position: absolute;

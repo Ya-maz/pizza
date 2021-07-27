@@ -1,9 +1,3 @@
-// let div = document.createElement('div');
-
-// div.className = "mainPage";
-// div.innerHTML = "<strong>Pizza site!</strong>on development stage";
-
-// document.body.append(div)
 
 function rotateWord(value) {
     const menuInner = document.querySelectorAll(".menuCircle_inner");
