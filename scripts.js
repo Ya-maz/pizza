@@ -1,4 +1,3 @@
-
 function rotateWord(value) {
     const menuInner = document.querySelectorAll(".menuCircle_inner");
     
