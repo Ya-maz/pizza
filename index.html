@@ -19,31 +19,41 @@
                     <div class="ingredients">моцарелло, соус томаты пелатин, свежий базилик</div>
                 </div>
                 <div class="size">
-                    <div class="choiceSize">Выберите размер</div>
+                    <div class="choiceSizeText">Выберите размер</div>
                     <div class="sizeSML">  
-                        <div class="sizeS">
-                            <input type="radio" id="S" name="size" value="S">
-                            <label for="S">S</label>
+                        <div class="choiseSize" id="S">
+                            <input type="radio" id="sizeS" name="size" value="S"checked>
+                            <label for="sizeS">S</label>
                         </div>
-                        <div class="sizeM">
-                            <input type="radio" id="M" name="size" value="M" checked>
-                            <label for="M">M</label></div>
-                        <div class="sizeL">
-                            <input type="radio" id="L" name="size" value="L">
-                            <label for="L">L</label></div>
+                        <div class="choiseSize" id="M"> 
+                            <input type="radio" id="sizeM" name="size" value="M" >
+                            <label for="sizeM">M</label></div>
+                        <div class="choiseSize" id="L">
+                            <input type="radio" id="sizeL" name="size" value="L">
+                            <label for="sizeL">L</label></div>
                         </div>
                     </div>
-                  
+                    <div class="basket">
+                        <div class="price">15 $</div>
+                        <div class="basketIcon"></div>
+                    </div>
                 </div>
-                <div class="basket">
-                    <div class="price">15 $</div>
-                    <div class="basketIcon"></div>
+                <div class="controlPanel">
+                    <div class="addToBasket">+добавить в корзину</div>
+                    <div class="saveToFavorites">сохранить в избранном</div>
                 </div>
             </div>
-            <div class="controlPanel">
-                <div class="addToBasket">+добавить в корзину</div>
-                <div class="saveToFavorites">сохранить в избранном</div>
+
+            <div class="nav">
+                <div class="left">
+                    <div class="leftChild"></div>
+                    <div class="leftChild"></div>
+                </div>
+                <div class="right">
+                    <div class="rightChild"></div>
+                </div>
             </div>
+
             <div class="menuBlock">
                 <div class="menuCircle">
                     <div class="menuCircle_inner">
@@ -153,18 +163,10 @@
                     </div>
                 </div>    
                 <div class="middle"></div>
-                <div class="small"></div>
-                <div class="nav">
-                    <div class="left">
-                        <div class="leftChild"></div>
-                        <div class="leftChild"></div>
-                    </div>
-                    <div class="right">
-                        <div class="rightChild"></div>
-                    </div>
+                <div class="small">
+                    <img src="./img/pizza.png" alt="">
                 </div>
             </div>
-       </div>
 
 <script src="scripts.js">
 </script>

@@ -94,7 +94,7 @@ html, body {
     /* font-family: 'Prosto One'; */
 }
 
-.choiceSize {
+.choiceSizeText {
     font-size: 16px;
     padding-left: 32px;
     color: rgba(255, 255, 255, 0.5);
@@ -105,37 +105,65 @@ html, body {
     justify-content: center;
     letter-spacing: normal;
 }
-
-.sizeS{    
+/* 
+#S{    
     padding: 10px 15px;
     border: 1px solid rgba(59, 43, 91, 0.7);
     border-radius: 50px;
 
 }
-.sizeM{
+#M{
     margin-right: 30px;
     margin-left: 30px;
     padding: 10px 12px;
     border: 1px solid rgba(59, 43, 91, 0.7);
     border-radius: 50px;
 }
-.sizeL{    
+#L{    
     padding: 10px 15px;
     border: 1px solid rgba(59, 43, 91, 0.7);
     border-radius: 50px;
-}
-
+} */
 input {
-    text-decoration: none;
+    display: none;
+}
+/* 
+input:checked {
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.sizeS:hover, .sizeM:hover,.sizeL:hover {
+#S:hover, #M:hover, #L:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
-.sizeS:active, .sizeM:active, .sizeL:active {
+#S:active, .sizeM:active, .sizeL:active {
     box-sizing: border-box;
     border: 1px solid #E5E5E5;
+} */
+
+.sizeSML label {
+	display: flex;
+	cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 10px;
+    border: 1px solid rgba(59, 43, 91, 0.7);
+	user-select: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
+ 
+/* Checked */
+.sizeSML input:checked + label {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+ 
+/* Hover */
+.sizeSML label:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+ 
 
 .basket {
     margin-right: 65px;
@@ -164,7 +192,7 @@ input {
 .menu{}
 .menuCircle{
     position: absolute;
-    top: 130%;
+    top: 123%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1300px;
@@ -188,7 +216,7 @@ input {
 }
 .large{
     position: absolute;
-    top: 130%;
+    top: 123%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1200px;
@@ -213,43 +241,36 @@ input {
     border-radius: 50%;
 
 }
-.middle{}
 .middle{
     position: absolute;
-    top: 130%;
+    top: 123%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1050px;
-    height: 1050px;
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%;
     border: 2px solid rgba(229, 229, 229, 0.7);
 }
-.middle_inner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    transform-origin: 100% 0%;
-    transform: rotate(122deg);
-    padding-top:594px;
 
-}
-.middle_content{
-    width: 15px;
-    height: 15px;
-    background: rgba(229, 229, 229, 1);
-    border-radius: 50%;
-
-}
 .small{
     position: absolute;
-    width: 1000px;
-    height: 920px;
-    top: 122%;
+    width: 800px;
+    height: 800px;
+    top: 123%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: no-repeat url(./img/pizza.png);
+    border: 2px solid rgba(229, 229, 229, 0.7);
+    border-radius: 50%;
 }
+img {
+    position: absolute;
+    top: -13%;
+    left: -8%;
+    transform: scale(0.9);
+    max-height: 120%;
+    max-width: 120%;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
