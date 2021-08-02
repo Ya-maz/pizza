@@ -105,41 +105,9 @@ html, body {
     justify-content: center;
     letter-spacing: normal;
 }
-/* 
-#S{    
-    padding: 10px 15px;
-    border: 1px solid rgba(59, 43, 91, 0.7);
-    border-radius: 50px;
-
-}
-#M{
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 10px 12px;
-    border: 1px solid rgba(59, 43, 91, 0.7);
-    border-radius: 50px;
-}
-#L{    
-    padding: 10px 15px;
-    border: 1px solid rgba(59, 43, 91, 0.7);
-    border-radius: 50px;
-} */
 input {
     display: none;
 }
-/* 
-input:checked {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#S:hover, #M:hover, #L:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-#S:active, .sizeM:active, .sizeL:active {
-    box-sizing: border-box;
-    border: 1px solid #E5E5E5;
-} */
-
 .sizeSML label {
 	display: flex;
 	cursor: pointer;
@@ -164,11 +132,10 @@ input:checked {
 	background-color: rgba(255, 255, 255, 0.5);
 }
  
-
 .priceBlock {
     margin-right: 65px;
     display: flex;
-    font-size: 24px;;
+    font-size: 24px;
 }
 
 .basketIcon {
@@ -187,9 +154,6 @@ input:checked {
 
 .addToBasket,
 .saveToFavorites { color: rgba(255, 255, 255, 0.5);}
-
-.menuBlock{}
-.menu{}
 .menuCircle{
     position: absolute;
     top: 123%;
@@ -232,14 +196,12 @@ input:checked {
     transform-origin: 100% 0%;
     transform: rotate(122deg);
     padding-top:594px;
-
 }
 .large_content{
     width: 15px;
     height: 15px;
     background: rgba(229, 229, 229, 1);
     border-radius: 50%;
-
 }
 .middle{
     position: absolute;
@@ -277,14 +239,25 @@ img {
 
 }
 
+
 .left, .right {
     width: 45px;
     height: 45px;
     background: no-repeat url(./img/leftButton.svg);
     margin: 80px 50px 0 50px;
+    border-radius: 50%;
 }
 .right {
     transform: rotate(180deg);
+}
+/* Checked */
+.left:active, .right:active {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+ 
+/* Hover */
+.left:hover, .right:hover {
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 
