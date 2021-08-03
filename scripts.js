@@ -79,12 +79,11 @@ function checkPizzaName() {
 
 function basketValue(pizza, size) {
     const price = document.querySelector(".price")
-    // pizza()
-    // size()
+     pizza()
+     size()
     for (let i = 0; menu.length > i; i++){  
         if (menu[i].name === pizza()){
-            price.textContent = menu[i].price[size()]
-
+            price.textContent =  menu[i].price[size()]
         }
     }
 }  
@@ -106,11 +105,44 @@ function showSlider(n) {
     name.textContent = menu[slideIndex - 1].name
     ingredients.textContent = menu[slideIndex - 1].ingredients
     sliderItem[slideIndex - 1].style.display = 'block'
-
 }
+function changeDotLocation(){
+    const dot = document.querySelector(".large_inner")
+    let plusdeg = 15
+    dot.style.transform = `rotate(${122 + plusdeg*(slideIndex - 1)}deg)`
+    dot.style.transition = `0.5s linear`
+}
+
+
+//функция для анимации затемнение заднего фона
+function changeItem() {
+
+    
+    document.querySelector(".menuCircle").style.opacity = "0"
+    document.querySelector(".menuCircle").style.transition = `0.7s linear`
+    document.querySelector(".middle").style.opacity = "0"
+    document.querySelector(".middle").style.transition = `0.7s linear`
+    document.querySelector(".large").style.opacity = "0"
+    document.querySelector(".large").style.transition = `0.7s linear`
+    document.querySelector(".mainBlock").style.opacity = "0"
+    document.querySelector(".mainBlock").style.transition = `0.7s linear`
+}
+function rechangeItem() {
+    document.querySelector(".menuCircle").style.opacity = "1"
+    document.querySelector(".middle").style.opacity = "1"
+    document.querySelector(".large").style.opacity = "1"
+    document.querySelector(".mainBlock").style.opacity = "1"
+    // document.querySelector(".mainBlock").style.transition =  `1s linear`
+}
+
 function plusSlideIndex(n){
     showSlider(slideIndex += n)
+    checkSize()
+    checkPizzaName()
+    basketValue (checkPizzaName, checkSize)
+    changeDotLocation()
 }
+
 navLeft.addEventListener('click', () => plusSlideIndex(-1))
 navRight.addEventListener('click', () => plusSlideIndex(1))
 

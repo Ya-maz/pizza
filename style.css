@@ -9,6 +9,9 @@
 }
 
 html, body {
+    background: rgb(254,249,249);
+    background: radial-gradient(circle, rgba(254,249,249,1) 1%, rgba(0,0,0,1) 91%);
+    background-position: bottom;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y:hidden;
@@ -195,7 +198,10 @@ input {
     width: 0;
     transform-origin: 100% 0%;
     transform: rotate(122deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     padding-top:594px;
+    transition: 3s linear;
+    /* animation: dotWalk 1s timing-function delay iteration-count direction fill-mode; */
 }
 .large_content{
     width: 15px;
@@ -203,6 +209,16 @@ input {
     background: rgba(229, 229, 229, 1);
     border-radius: 50%;
 }
+
+/* @keyframes dotWalk {
+    0%{
+        transform: rotate(122deg);
+    }
+    100%{
+        transform: rotate(137deg);
+    }
+    
+} */
 .middle{
     position: absolute;
     top: 123%;
@@ -224,6 +240,7 @@ input {
     border: 2px solid rgba(229, 229, 229, 0.7);
     border-radius: 50%;
 }
+
 img {
     position: absolute;
     top: -13%;
