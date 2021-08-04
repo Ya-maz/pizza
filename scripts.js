@@ -88,6 +88,7 @@ function basketValue(pizza, size) {
     }
 }  
 //Slide pizza
+let count = 0
 let slideIndex = 1,
     navLeft = document.querySelector(".left"),
     navRight = document.querySelector(".right")
@@ -112,12 +113,63 @@ function changeDotLocation(){
     dot.style.transform = `rotate(${122 + plusdeg*(slideIndex - 1)}deg)`
     dot.style.transition = `0.5s linear`
 }
+function userState() {
+    const order = 
+        {id: '',
+        time: '',
+         order:{
+                margarita: {
+                    amount: '',
+                    size:'',
+                },
+                pepperoni: {
+                    amount: '',
+                    size:'',
+                },
+            },
+        summ: ''}
+    return {
+        showOrder: { function (){
+            console.log(oreder)}
+        },
+        setOrder: {function(newOrder){
+            this.order = newOrder
+        }}
 
+    }
+}
+const person = userState()
+function getIDnum(){
+    return Math.floor((Math.random() * 1000) - 1)
+}
 
-//функция для анимации затемнение заднего фона
-function changeItem() {
+function ordering(count){
+
+    const order = {}
+    order.order = []
+    function addOrder() {
+        order.id = getIDnum()
+        order.time = Date()
+        order.order[count] = []
+        order.order[count].join(checkPizzaName())
+        order.order[count].join(checkSize())
+        count++
+    }
+    addOrder()
+    console.log(count)
 
     
+//    if (checkPizzaName() === "маргарита"){
+//         order.order.margarita.amount += 1 
+//    } else if(checkPizzaName() === "пепперони"){
+//         order.order.pepperoni.amount += 1 
+//    }
+//    order.order.pepperoni.size = checkSize ()
+}
+
+//функция для анимации затемнение заднего фона
+
+function changeItem() {
     document.querySelector(".menuCircle").style.opacity = "0"
     document.querySelector(".menuCircle").style.transition = `0.7s linear`
     document.querySelector(".middle").style.opacity = "0"
@@ -132,7 +184,6 @@ function rechangeItem() {
     document.querySelector(".middle").style.opacity = "1"
     document.querySelector(".large").style.opacity = "1"
     document.querySelector(".mainBlock").style.opacity = "1"
-    // document.querySelector(".mainBlock").style.transition =  `1s linear`
 }
 
 function plusSlideIndex(n){
@@ -142,18 +193,15 @@ function plusSlideIndex(n){
     basketValue (checkPizzaName, checkSize)
     changeDotLocation()
 }
-
+document.querySelector(".addToBasket").addEventListener('click', () => ordering(count))
 navLeft.addEventListener('click', () => plusSlideIndex(-1))
 navRight.addEventListener('click', () => plusSlideIndex(1))
-
 showSlider (slideIndex)
-
 rotateWord(2);
 rotateSymbol(1.5)
 checkSize()
 checkPizzaName()
 basketValue (checkPizzaName, checkSize)
-
 document.querySelectorAll('.choiseSize')
 .forEach(item=> item.addEventListener('click',
  ()=>basketValue (checkPizzaName, checkSize) ))
