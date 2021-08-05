@@ -143,16 +143,17 @@ function getIDnum(){
     return Math.floor((Math.random() * 1000) - 1)
 }
 
-function ordering(count){
+function ordering(){
 
     const order = {}
     order.order = []
     function addOrder() {
-        order.id = getIDnum()
+        (count === 0) ? order.id = getIDnum() : order.id = order.id; 
+
         order.time = Date()
         order.order[count] = []
-        order.order[count].join(checkPizzaName())
-        order.order[count].join(checkSize())
+        order.order[count].push(checkPizzaName())
+        order.order[count].push(checkSize())
         count++
     }
     addOrder()

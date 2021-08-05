@@ -9,12 +9,11 @@
 }
 
 html, body {
-    background: rgb(254,249,249);
-    background: radial-gradient(circle, rgba(254,249,249,1) 1%, rgba(0,0,0,1) 91%);
+    background:url(./img/spotlight.png);
     background-position: bottom;
     max-width: 100%;
-    overflow-x: hidden;
-    overflow-y:hidden;
+    /* overflow-x: hidden;
+    overflow-y:hidden; */
 }
 
 .mainBlock{
@@ -148,19 +147,69 @@ input {
     margin-left: 10px;
 }
 
-.controlPanel {
+ .controlPanel {
     display: flex;
     justify-content: space-between;
-    margin: 45px 180px 0 190px;
+    margin: 5px 180px 0 190px;
     letter-spacing: 2px;
+
+} 
+/*
+==========================
+        super button
+==========================
+*/
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 1.2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .fourth {
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+  .btn:active {
+    color: #000;
 }
 
-.addToBasket,
-.saveToFavorites { color: rgba(255, 255, 255, 0.5);}
-.addToBasket:hover {
-    outline: 1px solid rgba(255, 255, 255, 0.5);
-    outline-style: ;
-}
+
+
 .menuCircle{
     position: absolute;
     top: 123%;
