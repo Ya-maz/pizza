@@ -3,8 +3,8 @@
    <head>
      <meta charset="utf-8">
      <title>PizzaProject</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="">
+     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/secondary.css">
    </head>
    <body>
        <div class="mainBlock">
@@ -39,17 +39,31 @@
                         <div class="basketIcon"></div>
                     </div>
                 </div>
+
                 <div class="controlPanel">
                     <div class="addToBasket">
-                        <button class="btn fourth">добавиьт в  корзинку</button>
-                            
+                        <button class="btn fourth">
+<!-- --------------------------------------------------------------------- -->
+<!--                    Alien code start here                     -->
+<!-- --------------------------------------------------------------------- -->
+                            <main class="cd-main container">
+                                <div class="text-component text-center">
+                                  <p class="flex flex-wrap flex-center">
+                                    <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">добавиьт в  корзинку</a>
+                                  </p>
+                                </div>
+                              </main>
+                        </button>
+<!-- --------------------------------------------------------------------- -->
+<!--                    Alien code end here                     -->
+<!-- --------------------------------------------------------------------- --> 
                     </div>
                     <div class="saveToFavorites">
                         <button class="btn fourth"> добавить в избранное</button>
                        
                     </div>
                 </div>
-                         
+      
                 <div class="nav">
                     <div class="left"></div>
                     <div class="right"></div>
@@ -178,9 +192,12 @@
                 </div>
             </div>
 
-
+<!-- --------------------------------------------------------------------- -->
+<!--                    Alien code start here                     -->
+<!-- --------------------------------------------------------------------- -->
             <div class="cd-cart cd-cart--empty js-cd-cart">
                 <a href="#0" class="cd-cart__trigger text-replace">
+                                   <div class="basket"></div>
                     Cart
                     <ul class="cd-cart__count"> <!-- cart items count -->
                         <li>0</li>
@@ -211,7 +228,10 @@
                         </footer>
                     </div>
                 </div> <!-- .cd-cart__content -->
-            </div> <!-- cd-cart -->
+            </div> <!-- cd-cart -->   
+<!-- --------------------------------------------------------------------- -->
+<!--                    Alien code end here                     -->
+<!-- --------------------------------------------------------------------- -->          
             
 <script src="./scripts/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 <script src="./scripts/main.js"></script> 

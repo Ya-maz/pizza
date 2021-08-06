@@ -1,5 +1,8 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "codyhouse-framework": "^2.8.9"
   }
 }
